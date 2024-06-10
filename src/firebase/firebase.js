@@ -40,18 +40,32 @@ export async function handleSignOut(e) {
 
 //utilizzato per aggiungere l'articolo, dalla pagina home al carrello e quindi al database
 export function addItemToCart(item, user) { 
-  setDoc( doc(db, "Users/" + user.uid + "/cart-items", item.item), {
-    article: item.item,
-    code: item.code,
-    brand: item.brand,
-    cost: item.cost,
-    tag: item.tag,
-    img_src: item.img_src,
-    size: item.size,
-    size_chosen: "",
-    size_form: item.size_form,
-    timesAddedItem: item.timesAddedItem
-  })
+  
+  if(item.size) {
+    setDoc( doc(db, "Users/" + user.uid + "/cart-items", item.item), {
+      article: item.item,
+      code: item.code,
+      brand: item.brand,
+      cost: item.cost,
+      tag: item.tag,
+      img_src: item.img_src,
+      size: item.size,
+      size_chosen: "",
+      size_form: item.size_form,
+      timesAddedItem: item.timesAddedItem
+    })
+  } else {
+    setDoc( doc(db, "Users/" + user.uid + "/cart-items", item.item), {
+      article: item.item,
+      code: item.code,
+      brand: item.brand,
+      cost: item.cost,
+      tag: item.tag,
+      img_src: item.img_src,
+      size: item.size,
+      timesAddedItem: item.timesAddedItem
+    })
+  }
 
 
   updateDoc( doc(db, "Users/" + user.uid + "/order-summary", "order-summary"),  {
