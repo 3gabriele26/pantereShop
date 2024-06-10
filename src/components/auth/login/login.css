@@ -1,0 +1,12 @@
+.buttons {
+    display: flex;
+    flex-direction: column;
+}
+
+.registration-or-googleSignin {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+
+    margin-top: 1rem;
+}

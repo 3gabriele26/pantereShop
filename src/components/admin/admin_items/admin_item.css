@@ -1,0 +1,58 @@
+.div-btn {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+}
+
+.choose-file-edit {
+    display: flex;
+    align-items: center;
+    height: 235px;
+    width: 200px;
+}
+
+.div-modify-img {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+
+.button-to-save {
+    background-color: rgb(59, 82, 110);
+    opacity: 0.6;
+}
+.button-to-save:hover {
+    opacity: 1;
+}
+
+.button-to-delete {
+    background-color: #C40C0C;
+    opacity: 0.6;
+}
+.button-to-delete:hover {
+    opacity: 1;
+}
+
+.button-to-decline {
+    background-color: #ffb366;
+    opacity: 0.6;
+}
+.button-to-decline:hover {
+    opacity: 1;
+}
+
+.modify-icon {
+    cursor: pointer;
+    height: 15px;
+    opacity: 0.5;
+}
+.modify-icon:hover {
+    opacity: 1;
+}
+
+.editable {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+}

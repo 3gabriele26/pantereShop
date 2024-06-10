@@ -1,0 +1,64 @@
+.authentication {
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+    width: 500px;
+    
+}
+
+.auth-title {
+    color: rgb(59, 82, 110);
+}
+
+.inputSection {
+    display: flex;
+    flex-direction: column;
+    margin-top: 1rem;
+
+    width: 450px;
+}
+
+.form-control {
+    height: 2rem;
+    border-radius: 8px;
+    border-style: none;
+    box-shadow: 0px 0px 3px 2px rgba(0,0,0,0.3);
+
+    background-color: white;
+    color: black;
+}
+
+.form-btn {
+    margin-top: 1rem;
+}
+
+.primary-btn {
+    background-color: rgb(59, 82, 110);
+    opacity: 0.8;
+}
+.primary-btn:hover {
+    opacity: 1;
+}
+
+.secondary-btn {
+    color: rgb(59, 82, 110);
+}
+
+.forgot-password {
+    font-size: small;
+    background-color: transparent;
+    box-shadow: none;
+    font-weight: 300;
+
+    margin: 0;
+}
+
+.forgot-passwor-aTag {
+    opacity: 0.6;
+}
+.forgot-passwor-aTag:hover {
+    opacity: 1;
+}

@@ -1,0 +1,13 @@
+.googleLogin {
+    background-color: white;
+    border-radius: 8px;
+    display: flex;
+    justify-content: center;
+    cursor: pointer;
+}
+
+.logo-div {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}

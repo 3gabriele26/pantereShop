@@ -1,0 +1,110 @@
+.item {
+    background-color: white;
+    color: black;
+    width: 200px;
+    padding: 20px;
+
+    border-radius: 20px;
+    margin: 20px 30px;
+    box-shadow: 0px 0px 5px 0.5px rgba(0,0,0,0.3);
+}
+
+.imgDiv {
+    position: relative;
+    display: inline-block;
+}
+
+.imgItem {
+    width: 200px;
+    height: 200px;
+    object-fit: cover;
+
+    border-radius: 10px;
+    box-shadow: 0px 0px 5px 0.5px rgba(0,0,0,0.3);
+}
+
+.badgeDiv {
+    display: none;
+}
+
+.badgeItem{
+    position: absolute;
+    top: -10px;
+    right: -10px;
+}
+
+
+.itemInfo {
+    justify-content: space-around;
+    align-items: center;
+
+    width: 200px;
+}
+
+.divCostItem {
+    margin-top: 10px;
+
+    display: flex;
+    flex-direction: row;
+    text-align: left;
+    justify-content: space-around;
+}
+
+.addToOrderBtn {
+    background-color: rgb(59, 82, 110);
+    opacity: 0.6;
+
+    font-weight: 700;
+}
+.addToOrderBtn:hover {
+    opacity: 1;
+}
+
+.itemTags {
+    margin-top: 1rem;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-around;
+
+    text-align: center;
+}
+
+@media only screen and (max-width: 425px) {
+    .item {
+        padding: 10px;
+        margin: 20px 10px;
+        width: fit-content;
+    }
+
+    .imgItem {
+        width: 160px;
+    
+        border-radius: 10px;
+        box-shadow: 0px 0px 5px 0.5px rgba(0,0,0,0.3);
+    }
+
+    .itemInfo {
+    
+        width: fit-content;
+    }
+
+    .divInfoItem {
+        width: 160px;
+        align-items: center;
+    }
+
+    .divCostItem {
+        margin-top: 10px;
+        flex-direction: column;
+        justify-content: space-around;
+        align-items: center;
+
+        width: 160px;
+    }
+
+    .itemTags {
+        display: none;
+    }
+
+}

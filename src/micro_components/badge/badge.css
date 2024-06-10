@@ -1,0 +1,18 @@
+.badge {
+    border-radius: 50%;
+    background-color: rgb(59, 82, 110);
+    color: white;
+    font-size: 12px;
+}
+
+.badge-S {
+    padding: 5px 10px;
+}
+
+.badge-M {
+    padding: 8px 10px;
+}
+
+.badge-L {
+    padding: 12px 10px;
+}

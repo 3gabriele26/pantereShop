@@ -1,0 +1,61 @@
+.header{
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  height: 200px;
+  background-image: url("../../assets/imgField.jpeg");
+  background-size: cover;
+  background-color: rgba(255,255,255,0.3);
+  background-blend-mode: lighten;
+  background-position: 100% 10%;
+}
+
+.div-logo-button {
+  display: flex;
+  flex-direction: column;
+  margin-left: 1rem;
+}
+  
+.logoPantere {
+  border-radius: 1rem;
+  margin: 10px;
+
+  height: 90px;
+  width: 90px;
+}
+
+.header-button-div {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+
+  margin-right: 2rem;
+}
+
+.button-cart {
+  background-color: transparent;
+  padding: 0;
+}
+
+.cartIcon {
+  height: 60px;
+  margin: 30px;
+
+  opacity:0.8;
+}
+.cartIcon:hover {
+  opacity: 1;
+}
+
+.badgeCart {
+  position: absolute;
+  top: 15%;
+  right: 15%;
+}
+
+@media only screen and (max-width: 425px) {
+  .header-button-div {
+  
+    margin-right: 0;
+  }
+}

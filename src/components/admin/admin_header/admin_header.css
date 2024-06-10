@@ -1,0 +1,32 @@
+.div-admin-header {
+    background-color: #EFEFEF;
+    box-shadow: 0px 0px 5px 0.5px rgba(0,0,0,0.3);
+
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+.create-item {
+    display: none;
+    flex-direction: row;
+}
+
+.div-admin-links {
+    display: flex;
+    flex-direction: row;
+}
+
+.admin-selector-page {
+    margin: 1rem;
+    padding: 0.4rem;
+    background-color: rgb(59, 82, 110);
+    box-shadow: 0px 0px 5px 0.5px rgba(0,0,0,0.3);
+    color: white;
+    border-radius: 0.6rem;
+
+    opacity: 0.8;
+}
+.admin-selector-page:hover {
+    opacity: 1;
+}
