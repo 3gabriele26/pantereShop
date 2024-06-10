@@ -21,7 +21,7 @@ export function control_if_size_chosen(item) {
         } else {
             return true
         }
-    }    
+    } else return true   
 }
 
 export function checkIfDeleteItem(itemCode, item) {
