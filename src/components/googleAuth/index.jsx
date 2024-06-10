@@ -22,7 +22,7 @@ function SignInwithGoogle() {
           lastName: "",
         });
 
-        if(control_summary_order(auth.currentUser)) {
+        if(!control_summary_order(auth.currentUser)) {
           summary_order(auth.currentUser)
         }
         
