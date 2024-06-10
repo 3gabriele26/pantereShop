@@ -62,3 +62,26 @@
 .forgot-passwor-aTag:hover {
     opacity: 1;
 }
+
+
+
+@media only screen and (max-width: 550px) {
+
+    .authentication {
+        margin: 0;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+
+        width: auto;
+    }
+
+    .inputSection {
+        display: flex;
+        flex-direction: column;
+        margin-top: 1rem;
+    
+        width: 250px;
+    }
+}
