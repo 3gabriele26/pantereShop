@@ -130,6 +130,7 @@ export function sendOrder(user, total) {
         })
 
         items.forEach((item) => {
+          console.log(item)
           deleteDoc( doc(db, "Users/" + user.uid + "/cart-items", item.article))
         })
 
