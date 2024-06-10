@@ -102,7 +102,7 @@ export function sendOrder(user, total) {
   let thanks_quote = document.querySelector(".thanks")
   let cart_item_viewer = document.querySelector("#cartItemViewer")
   let day = date.getDate()
-  let month = date.getMonth()
+  let month = date.getMonth() + 1
   let year = date.getFullYear()
   let status = true
 
