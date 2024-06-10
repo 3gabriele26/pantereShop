@@ -1,6 +1,6 @@
 import { createUserWithEmailAndPassword } from "firebase/auth";
 import { useState } from "react";
-import { auth, db } from "../../../firebase/firebase";
+import { auth, db, summary_order } from "../../../firebase/firebase";
 import { setDoc, doc } from "firebase/firestore";
 
 import '../authentication.css'
@@ -26,6 +26,8 @@ function Register() {
           lastName: lname,
           photo:""
         });
+
+        summary_order(user)
       }
 
       console.log("User Registered Successfully!!");
