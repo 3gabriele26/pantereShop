@@ -1,4 +1,5 @@
 .admin-orders {
     display: none;
     flex-wrap: wrap;
+    ustify-content: center;
 }
