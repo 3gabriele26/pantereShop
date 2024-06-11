@@ -5,12 +5,6 @@ import ItemViewer from '../itemViewer'
 import './home.css'
 
 const Home = () => {
-    useEffect(() => {
-        if(!control_summary_order(auth.currentUser)) {
-            summary_order(auth.currentUser)
-        }
-    })
-
     return (
         <>
             <Header type={"ITEM-VIEW"}/>
