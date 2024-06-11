@@ -107,17 +107,25 @@ export function sendOrder(user, total) {
   let status = true
 
   getCartItem().then((items) => {
+    let status = true
+
     items.forEach((item) => {
-      status = control_if_size_chosen(item)
+      console.log(item)
+
+      if(item.size) {
+        if(item.size_chosen == "") {
+            status = !status
+        }
+      }
     })
 
-    if(!status) {
+    if(status == false) {
       window.alert("Seleziona le taglie per tutti gli articoli")
     } else {
 
       cart_item_viewer.style.display = "none"
       thanks_quote.style.display = "block"
-      
+
       setTimeout(function() {
         addDoc( collection(db, "Orders"), {
           user: user.displayName,
@@ -130,15 +138,20 @@ export function sendOrder(user, total) {
         })
 
         items.forEach((item) => {
-          console.log(item)
           deleteDoc( doc(db, "Users/" + user.uid + "/cart-items", item.article))
         })
 
         summary_order(user)
   
-        window.location.href = "/home"
-      }, 900)
+        
+      }, 5000)
+
+      window.location.href = "/home"
+      
     }
+
+
+    
   })
 }
 
