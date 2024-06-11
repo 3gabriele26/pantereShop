@@ -68,8 +68,18 @@ export function addItemToCart(item, user) {
   }
 
 
-  updateDoc( doc(db, "Users/" + user.uid + "/order-summary", "order-summary"),  {
-    total: increment(item.cost)
+  control_summary_order(user).then((value) => {
+    console.log(value)
+    if(value) {
+      setDoc( doc(db, "Users/" + user.uid + "/order-summary", "order-summary"), {
+        total: item.cost
+      })
+  
+    } else {
+      updateDoc( doc(db, "Users/" + user.uid + "/order-summary", "order-summary"),  {
+        total: increment(item.cost)
+      })
+    }
   })
 }
 
@@ -142,16 +152,9 @@ export function sendOrder(user, total) {
         })
 
         summary_order(user)
-  
         
-      }, 5000)
-
-      window.location.href = "/home"
-      
+      }, 5000) 
     }
-
-
-    
   })
 }
 
