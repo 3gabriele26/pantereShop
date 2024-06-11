@@ -137,6 +137,9 @@ export function sendOrder(user, total) {
       thanks_quote.style.display = "block"
 
       setTimeout(function() {
+        thanks_quote.style.display = "none"
+        cart_item_viewer.style.display = "block"
+        
         addDoc( collection(db, "Orders"), {
           user: user.displayName,
           day: day,
