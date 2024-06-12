@@ -134,7 +134,7 @@ export function sendOrder(user, total) {
     } else {
 
       cart_item_viewer.style.display = "none"
-      thanks_quote.style.display = "flex"
+      thanks_quote.style.display = "block"
 
       setTimeout(function() {
 
