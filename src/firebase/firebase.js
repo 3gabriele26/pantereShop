@@ -114,7 +114,6 @@ export function sendOrder(user, total) {
   let day = date.getDate()
   let month = date.getMonth() + 1
   let year = date.getFullYear()
-  let status = true
 
   getCartItem().then((items) => {
     let status = true
