@@ -129,17 +129,15 @@ export function sendOrder(user, total) {
       }
     })
 
-    if(status == false) {
+   if(status == false) {
       window.alert("Seleziona le taglie per tutti gli articoli")
     } else {
 
       cart_item_viewer.style.display = "none"
-      thanks_quote.style.display = "block"
+      thanks_quote.style.display = "flex"
 
       setTimeout(function() {
-        thanks_quote.style.display = "none"
-        cart_item_viewer.style.display = "block"
-        
+
         addDoc( collection(db, "Orders"), {
           user: user.displayName,
           day: day,
@@ -155,7 +153,7 @@ export function sendOrder(user, total) {
         })
 
         summary_order(user)
-        
+  
       }, 5000) 
     }
   })
