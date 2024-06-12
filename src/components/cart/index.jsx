@@ -120,8 +120,9 @@ const Cart = () => {
                     
                 </div> 
 
-                <div className='thanks'>
+               <div className='thanks'>
                     <h1 className='title'>GRAZIE</h1>
+                    <button className='primary-btn' onClick={() => window.location.href = "/home"}>CONTINUA GLI ACQUISTI</button>
                 </div>
             </>}
         </>
